@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+        {% if the_title %}
+    <title>{{ the_title }}</title>
+        {% else %}
+    <title>Главная блог</title>
+        {% endif %}
+        {% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+<div class="wrapper">
+{% block menu %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block main_page %}
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+</div>
+</body>
+</html>
