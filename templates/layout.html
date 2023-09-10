@@ -15,15 +15,32 @@
 <body>
 <div class="wrapper">
 {% block menu %}
+<header class="header">
+<ul class="main-menu">
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Блог</a></li>
+    <li><a href="#">Регистрация</a></li>
+    <li><a href="#">Логин</a></li>
+    <li><a href="#">Аккаунт</a></li>
+    <li><a href="#">Создать</a></li>
+    <li><a href="#">Выход</a></li>
+    </ul>
+</header>
 {% endblock %}
 
 {% block content %}
+<div class="content"></div>
 {% endblock %}
 
 {% block main_page %}
+<div class="content">
+<h1>Приветствую</h1>
+</div>
 {% endblock %}
 
 {% block footer %}
+<div class="footer">Все права защищены<br>
+&#169; Александр Матвеев</div>
 {% endblock %}
 </div>
 </body>
